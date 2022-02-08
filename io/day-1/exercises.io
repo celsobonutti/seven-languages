@@ -23,8 +23,9 @@ You can use a the slotNames function
 */
 
 Car := Object clone
-Car passaMarcha := ""
+Car barulho := ""
+Car passaMarcha := method(self barulho println)
 celtaPimp := Car clone
-celtaPimp passaMarcha = method("pfiu tsiiiiiii" println)
+celtaPimp barulho = "pfiu tsiiiiii"
 pfiuTss := celtaPimp getSlot("passaMarcha")
-(pfiuTss)
+(celtaPimp pfiuTss)
