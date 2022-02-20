@@ -39,8 +39,7 @@ TwoDimensional dim := method(x, y,
 )
 
 TwoDimensional set := method(x, y, value,
-  row := self at(y - 1)
-  row atPut(x - 1, value)
+  self at(y - 1) atPut(x - 1, value)
 )
 
 TwoDimensional get := method(x, y,
